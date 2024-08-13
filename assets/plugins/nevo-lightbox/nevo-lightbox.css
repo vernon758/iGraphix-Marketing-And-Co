@@ -1,0 +1,141 @@
+/*
+
+	Nevo Lightbox CSS
+	Version 1.0
+
+*/
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999997;
+  display: none;
+}
+
+#lightbox .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  display: none;
+  z-index: -1;
+  cursor: zoom-out;
+}
+
+#lightbox .loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+html body #lightbox img {
+  max-width: 9999999px !important;
+  z-index: 2;
+}
+
+html body #lightbox img.zoomable {
+  cursor: zoom-in;
+}
+
+html body #lightbox img.zoomable.zoomed {
+  cursor: zoom-out;
+}
+
+.prev-lightbox-item, .next-lightbox-item {
+  position: fixed;
+  top: 50%;
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+.prev-lightbox-item:after, .prev-lightbox-item:before, .next-lightbox-item:after, .next-lightbox-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  margin-left: -7px;
+  background: white;
+}
+
+.prev-lightbox-item:before, .next-lightbox-item:before {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+.prev-lightbox-item:after, .next-lightbox-item:after {
+  transform: rotate(-45deg);
+  margin-top: 7px;
+}
+
+.prev-lightbox-item {
+  transform: rotate(180deg) translateY(-5px);
+  left: 0;
+  transition: left .3s;
+}
+
+.next-lightbox-item {
+  transform: translateY(5px);
+  right: 0;
+  transition: right .3s;
+}
+
+.close-lightbox {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999999;
+  background: black;
+  cursor: pointer;
+}
+
+.close-lightbox:after, .close-lightbox:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  margin-left: -14px;
+  background: white;
+}
+
+.close-lightbox:before {
+  transform: rotate(45deg);
+  margin-top: 0;
+}
+
+.close-lightbox:after {
+  transform: rotate(-45deg);
+  margin-top: 0;
+}
+
+.close-lightbox,
+.prev-lightbox-item,
+.next-lightbox-item {
+  transition: background-color .4s;
+}
+
+.close-lightbox:hover,
+.prev-lightbox-item:hover,
+.next-lightbox-item:hover {
+  background-color: #333;
+}

@@ -1,0 +1,88 @@
+/*
+
+Nevo Slider CSS
+Version 1.0
+Made by ThemeVillain
+
+*/
+.nevo-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.nevo-slider.fullscreen,
+.nevo-slider.fullscreen .slides,
+.nevo-slider.fullscreen .slide,
+.nevo-slider.fullscreen .slide .container {
+  height: 100vh;
+}
+
+.nevo-slider.halfscreen,
+.nevo-slider.halfscreen .slides,
+.nevo-slider.halfscreen .slide,
+.nevo-slider.halfscreen .slide .container {
+  height: calc(50vh + 5rem);
+  min-height: 700px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nevo-slider.halfscreen,
+  .nevo-slider.halfscreen .slides,
+  .nevo-slider.halfscreen .slide,
+  .nevo-slider.halfscreen .slide .container {
+    min-height: auto;
+  }
+}
+
+.content > .nevo-slider.fullscreen:first-child,
+.content > .nevo-slider.halfscreen:first-child {
+  margin-top: -5rem;
+}
+
+.nevo-slider[data-direction=left] {
+  cursor: url('data:image/svg+xml;utf8,<svg width="22px" height="39px" viewBox="0 0 22 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator:Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Group" transform="translate(2.000000, 1.000000)" stroke-width="2"><path d="M3.55271368e-15,1 L17.5277564,18.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF"></path><path d="M3.55271368e-15,18 L17.5277564,35.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF" transform="translate(9.000000, 27.000000) scale(1, -1) translate(-9.000000, -27.000000) "></path><path d="M0.5,0.5 L18.5277564,18.5277564" id="Line-2" stroke="#333333"></path><path d="M0.5,18.5 L18.5277564,36.5277564" id="Line-2" stroke="#333333" transform="translate(9.500000, 27.500000) scale(1, -1) translate(-9.500000, -27.500000) "></path></g></g></svg>') 5 -25, e-resize;
+}
+
+.nevo-slider[data-direction=left] .light-text {
+  cursor: url('data:image/svg+xml;utf8,<svg width="22px" height="39px" viewBox="0 0 22 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator:Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Group" transform="translate(2.000000, 1.000000)" stroke-width="2"><path d="M3.55271368e-15,1 L17.5277564,18.5277564" id="Line-2" stroke-opacity="0.25" stroke="#333333"></path><path d="M3.55271368e-15,18 L17.5277564,35.5277564" id="Line-2" stroke-opacity="0.25" stroke="#333333" transform="translate(9.000000, 27.000000) scale(1, -1) translate(-9.000000, -27.000000) "></path><path d="M0.5,0.5 L18.5277564,18.5277564" id="Line-2" stroke="#FFFFFF"></path><path d="M0.5,18.5 L18.5277564,36.5277564" id="Line-2" stroke="#FFFFFF" transform="translate(9.500000, 27.500000) scale(1, -1) translate(-9.500000, -27.500000) "></path></g></g></svg>') 5 -25, e-resize;
+}
+
+.nevo-slider[data-direction=right] {
+  cursor: url('data:image/svg+xml;utf8,<svg width="22px" height="39px" viewBox="0 0 22 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator:Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Group" transform="translate(10.500000, 19.500000) scale(-1, 1) translate(-10.500000, -19.500000) translate(1.000000, 1.000000)" stroke-width="2"><path d="M3.55271368e-15,1 L17.5277564,18.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF"></path><path d="M3.55271368e-15,18 L17.5277564,35.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF" transform="translate(9.000000, 27.000000) scale(1, -1) translate(-9.000000, -27.000000) "></path><path d="M0.5,0.5 L18.5277564,18.5277564" id="Line-2" stroke="#333333"></path><path d="M0.5,18.5 L18.5277564,36.5277564" id="Line-2" stroke="#333333" transform="translate(9.500000, 27.500000) scale(1, -1) translate(-9.500000, -27.500000) "></path></g></g></svg>') 5 -25, w-resize;
+}
+
+.nevo-slider[data-direction=right] .light-text {
+  cursor: url('data:image/svg+xml;utf8,<svg width="22px" height="39px" viewBox="0 0 22 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator:Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Group" transform="translate(10.500000, 19.500000) scale(-1, 1) translate(-10.500000, -19.500000) translate(1.000000, 1.000000)" stroke-width="2"><path d="M3.55271368e-15,1 L17.5277564,18.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF"></path><path d="M3.55271368e-15,18 L17.5277564,35.5277564" id="Line-2" stroke-opacity="0.25" stroke="#FFFFFF" transform="translate(9.000000, 27.000000) scale(1, -1) translate(-9.000000, -27.000000) "></path><path d="M0.5,0.5 L18.5277564,18.5277564" id="Line-2" stroke="#FFFFFF"></path><path d="M0.5,18.5 L18.5277564,36.5277564" id="Line-2" stroke="#FFFFFF" transform="translate(9.500000, 27.500000) scale(1, -1) translate(-9.500000, -27.500000) "></path></g></g></svg>') 5 -25, w-resize;
+}
+
+.nevo-slider .slides {
+  height: 100%;
+}
+
+.nevo-slider .slides .slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.nevo-slider .slides .slide.is-dark {
+  background-color: #1d1e20;
+}
+
+.nevo-slider .slides .slide.is-dark .is-background {
+  opacity: .4;
+}
+
+.nevo-slider .slides {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.nevo-slider .slides .slide {
+  width: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}

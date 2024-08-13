@@ -1354,7 +1354,8 @@ html.loaded:before, html.loaded:after {
 
 @media screen and (max-width: 850px) {
   .button {
-    margin-left: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
     display: block;
     width: max-content;
   }

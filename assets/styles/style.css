@@ -2187,9 +2187,10 @@ header.header, .burger {
     align-self: center;
   }
   .menu {
-    background: white;
+    background: #ffffff;
     font-size: 3rem;
-    line-height: 1.4;
+    line-height: 6rem;
+    text-align: center;
     padding: 1.5rem;
     display: none;
     visibility: hidden;
@@ -2199,11 +2200,12 @@ header.header, .burger {
     font-family: "hk-nova", serif;
   }
   .menu .menu-item a {
-    border: 0 !important;
+    border: 0;
     transition: opacity .3s;
   }
   .menu .menu-item a:hover {
     opacity: .5;
+    color: #06a9bb;
   }
   .menu .menu-item.has-dropdown .dropdown-nav {
     position: relative;
@@ -2218,13 +2220,13 @@ header.header, .burger {
     border-left: 1px solid #1d1e20;
   }
   .menu.social {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding: 1.5rem;
-    background: #1d1e20;
+    background: #ffffff;
     margin: 0 !important;
   }
   .menu.social .menu-item {
-    padding: .5rem 0;
+    padding: .9rem 0;
   }
   .menu.social .menu-item a {
     color: white;
@@ -4507,8 +4509,26 @@ form textarea {
   color: #1d1e20 !important;
 }
 
+.color-text-33, .color-text-33 * {
+    background: -webkit-linear-gradient(right,#833ab4,#fd1d1d,#fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-text-44, .color-text-44 * {
+  background: -webkit-linear-gradient(right,#1078f6,#1078f6,#1078f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-text-55, .color-text-55 * {
+  background: -webkit-linear-gradient(right,#25D366,#25D366,#139f46);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .color-text-1, .color-text-1 * {
-  color: #ff9380;
+  color: #06a9bb;
 }
 
 .color-text-2, .color-text-2 * {

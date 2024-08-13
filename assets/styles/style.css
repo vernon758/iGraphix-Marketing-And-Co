@@ -2203,12 +2203,14 @@ header.header, .burger {
   }
 header.header a.brand img {
   display: flex;
-  margin: 1.5rem;
+  margin-top: 1.5rem;
   cursor: pointer;
   height: 3rem;
   position: fixed;
   top: 0;
   left: 45%;
+  justify-content: center;
+  align-content: center;
   z-index: 6;
   flex-direction: column;
   transition: all .3s;
@@ -2263,7 +2265,7 @@ header.header{
     padding-bottom: 7.5rem;
   }
   body.menu-opened .burger {
-    margin: 2.5rem;
+    margin: 2.5rem 1.5rem;
     cursor: pointer;
     height: 3rem;
     position: fixed;

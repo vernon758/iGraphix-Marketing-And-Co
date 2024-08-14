@@ -1433,7 +1433,7 @@ html.loaded:before, html.loaded:after {
 }
 
 .button.md {
-  padding: 1.25rem !important;
+  padding: .8rem !important;
 }
 
 .button.lg {
@@ -2166,13 +2166,10 @@ header.header, .burger {
 
 
 .menu-button {
-  margin-top: 1.4rem;
+  margin-top: .7rem;
   display: none; /* Hide by default */
   position: absolute;
-  top: px;
   right: 10px;
-  background-color: #000000;
-  padding: 3px 18px 3px 18px;
   border-radius: 5%; /* Rounded button */
 }
 

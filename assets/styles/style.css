@@ -1317,6 +1317,8 @@ html.loaded:before, html.loaded:after {
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 5%; /* Rounded button */
+
 }
 
 .button:before, .button:after {
@@ -1377,7 +1379,7 @@ html.loaded:before, html.loaded:after {
 }
 
 .button.primary {
-  color: #fff;
+  color: #06a9bb;
 }
 
 .button.primary:before {
@@ -1385,7 +1387,7 @@ html.loaded:before, html.loaded:after {
 }
 
 .button.primary:after {
-  background: #1d1e20;
+  background: #fcfdff;
 }
 
 .button.secondary:before {
@@ -2164,14 +2166,13 @@ header.header, .burger {
 
 
 .menu-button {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   display: none; /* Hide by default */
   position: absolute;
-  top: 5px;
+  top: px;
   right: 10px;
-  background-color: #06a9bb;
-  padding: 7px;
-  padding-bottom: 5px;
+  background-color: #000000;
+  padding: 3px 18px 3px 18px;
   border-radius: 5%; /* Rounded button */
 }
 
@@ -2210,8 +2211,8 @@ header.header, .burger {
   }
   .menu {
     background: #ffffff;
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 5rem;
     /*text-align: center;*/
     padding: 1.5rem;
     display: none;
@@ -2244,6 +2245,10 @@ header.header a.brand img {
 header.header{
   height: 6rem
 }
+
+body.menu-opened .menu-button {
+  display: none;
+}
   .menu .menu-item a:hover {
     opacity: .5;
     color: #06a9bb;
@@ -2261,7 +2266,8 @@ header.header{
     border-left: 1px solid #1d1e20;
   }
   .menu.social {
-    font-size: 1rem;
+    line-height: 4rem;
+    font-size: 1.9rem;
     padding: 1.5rem;
     background: #282828;
     margin: 0 !important;
@@ -2299,10 +2305,6 @@ header.header{
     flex-direction: column;
     transition: all .3s;
   }
-  body.menu-opened .menu-button {
-    display: none;
-  }
-
   body.menu-opened .burger hr {
     margin: 0;
   }

@@ -2208,7 +2208,7 @@ header.header, .burger {
   }
   .menu {
     background: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 5rem;
     /*text-align: center;*/
     padding: 1.5rem;
@@ -2264,7 +2264,7 @@ body.menu-opened .menu-button {
   }
   .menu.social {
     line-height: 4rem;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     padding: 1.5rem;
     background: #282828;
     margin: 0 !important;

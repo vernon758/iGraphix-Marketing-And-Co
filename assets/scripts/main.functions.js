@@ -230,3 +230,11 @@ $(function () {
 
 
 });
+window.onload = function() {
+    const bubble = document.querySelector('.bubble');
+    
+    // Set a timeout to hide the bubble after 5 seconds
+    setTimeout(() => {
+        bubble.classList.add('bubble-hidden');
+    }, 10000); // 5000 milliseconds = 5 seconds
+};

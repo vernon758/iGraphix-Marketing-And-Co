@@ -2174,7 +2174,7 @@ header.header, .burger {
 
 
 .menu-button {
-  margin-top: .7rem;
+  margin-top: .4rem;
   display: none; /* Hide by default */
   position: absolute;
   right: 10px;
@@ -2248,7 +2248,7 @@ header.header, .burger {
     cursor: pointer;
     height: 3rem;
     position: fixed;
-    top: 0;
+    top: -10px;
     left: 0;
     z-index: 6;
     flex-direction: column;
@@ -2256,8 +2256,8 @@ header.header, .burger {
   }
   .burger hr {
     border-style: solid;
-    border-color: #1d1e20;
-    border-width: 2px;
+    border-color: #000000;
+    border-width: 1.5px;
     width: 2.5rem;
     margin: .45rem 0;
     transition: all .3s;
@@ -2286,18 +2286,18 @@ header.header a.brand img {
   cursor: pointer;
   height: 3rem;
   position: fixed;
-  top: 0;
+  top: -8px;
   left: 45%;
   justify-content: center;
   align-content: center;
   z-index: 6;
   flex-direction: column;
   transition: all .3s;
-  max-height: 3.5rem;
+  max-height: 3rem;
 }
 
 header.header{
-  height: 6rem
+  height: 5rem
 }
 
 body.menu-opened .menu-button {

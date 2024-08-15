@@ -1512,6 +1512,14 @@ a#to-top hr:last-child {
   transition: opacity .5s, transform .5s;
 }
 
+.thumb-1 img {
+  width: 100.1%;
+  max-width: 100.1%;
+  vertical-align: top;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
 .thumb .labels {
   position: absolute;
   top: 0;
@@ -2217,7 +2225,7 @@ header.header, .burger {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: px;
-  left: -150%;
+  left: -125%;
   transform: translateX(-50%);
 }
 

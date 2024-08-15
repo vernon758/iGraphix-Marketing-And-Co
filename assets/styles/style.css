@@ -2174,6 +2174,7 @@ header.header, .burger {
 
 
 .menu-button {
+  margin: -0.9rem;
   margin-top: .4rem;
   display: none; /* Hide by default */
   position: absolute;

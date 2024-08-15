@@ -238,3 +238,23 @@ window.onload = function() {
         bubble.classList.add('bubble-hidden');
     }, 10000); // 5000 milliseconds = 5 seconds
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".fade", {
+        opacity: 0,  // Start by setting the target opacity to 0
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".fade",
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: true,
+            onUpdate: (self) => {
+                // When scrolling down, decrease opacity
+                // When scrolling up, increase opacity
+                self.progress = self.direction === 1 ? self.progress : 1 - self.progress;
+            },
+        }
+    });
+});

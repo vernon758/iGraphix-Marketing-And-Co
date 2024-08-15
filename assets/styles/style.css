@@ -2172,6 +2172,17 @@ header.header, .burger {
   }
 }
 
+.fade {
+  opacity: 0;
+}
+
+x-marquee {
+  --text-color: black;
+  --bg-color: white;
+  font-size: 76px;
+  padding: 2.5rem;
+ 
+}
 
 .menu-button {
   margin: -0.9rem;

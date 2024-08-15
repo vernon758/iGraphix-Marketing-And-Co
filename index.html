@@ -119,13 +119,17 @@
             </div>
         </section>
 
-
+        <!--- Scrolling Text
+        <x-marquee count="100" full-width timing="200"><h2>Think. Create. Iterate.</h2></x-marquee>
+        <x-marquee count="100" full-width timing="180"><h2>Think. Create. Iterate.</h2></x-marquee>
+---->
 
         <section class="section-size-3">
           <div class="container">
             <div class="grid">
               <div class="column-6 centered text-center">
-                <h2>Think. Create. Iterate.</h2>
+
+                <h2 class="fade" style="opacity: 1;">Think. Create. Iterate.</h2>
                 <div class="space-2"></div>
                 <p>Our motto is simple: we care deeply about the 
                     products we create and strive to make them better 
@@ -399,5 +403,12 @@
     <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
     <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
     <script src="../assets/scripts/main.functions.js"></script>
+
+    <!-- Text effect-->
+    <script src="https://ryandejaegher.com/js/marquee.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+
   </body>
 </html>

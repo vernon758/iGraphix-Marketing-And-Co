@@ -2203,7 +2203,26 @@ x-marquee {
   text-decoration: none !important;
   border: 0px;
 }
+
+.mobile-text{
+  text-align: center;
+  font-size: px;
+  padding: 30px;
+}
+
+
+
 @media screen and (max-width: 1024px) {
+  .mobile-text{
+    text-align: center;
+    font-size: 33px;
+  }
+  
+.mobile-button {
+  margin-left: 50%;
+ align-items: center;
+ justify-self: center;
+}
   .icon-container {
     position: relative;
     display: inline-block;

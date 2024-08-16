@@ -1063,6 +1063,23 @@ blockquote .author {
   display: block;
   position: relative;
 }
+.with-line {
+  position: relative;
+  display: inline-block; /* Ensure the line aligns with the text width */
+  padding-bottom: 10px; /* Space between the text and the line */
+}
+
+.with-line::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the thickness of the line */
+  background: linear-gradient(to right, rgba(147, 147, 147, 0), #cfcfcf, rgba(0, 0, 0, 0)); /* Creates the fade-out effect */
+  transform: translateX(-50%); /* Center the line under the text */
+}
+
 
 .map-container {
   position: relative;

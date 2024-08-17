@@ -1069,6 +1069,18 @@ blockquote .author {
   padding-bottom: 10px; /* Space between the text and the line */
 }
 
+.pattern{
+  background-size: 980%; /* Auto width, full height */
+  margin-top: -2.5%;
+  background-image: url('/assets/images/pattern.png');
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image in the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-color: rgba(255, 255, 255, 0.965); /* Black overlay with 50% opacity */
+  background-blend-mode: overlay; /* Blend the image and color */
+
+}
+
 .with-line::after {
   content: '';
   position: absolute;
@@ -2307,6 +2319,16 @@ x-marquee {
 
 
 @media screen and (max-width: 1024px) {
+  .pattern{
+    background-size: auto 1000%; /* Auto width, full height */
+    background-image: url('/assets/images/pattern.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image in the element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: rgba(255, 255, 255, 0.928); /* Black overlay with 50% opacity */
+    background-blend-mode: overlay; /* Blend the image and color */
+  
+  }
   .mobile-text{
     text-align: center;
     font-size: 33px;
@@ -2547,7 +2569,7 @@ ul.grid-filters li:last-child a {
     display: block;
     position: absolute;
     width: 2rem;
-    border-top: 2px solid #1d1e20;
+    border-top: 2px solid #ffffff;
     transition: all .15s;
   }
   ul.grid-filters:before {
@@ -4710,7 +4732,7 @@ form textarea {
 }
 
 .blue-bg {
-  background-color: #06a9bb0e;
+  background-color: #000000e0;
 }
 
 .color-bg-1 {

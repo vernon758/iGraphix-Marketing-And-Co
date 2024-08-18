@@ -1069,16 +1069,19 @@ blockquote .author {
   padding-bottom: 10px; /* Space between the text and the line */
 }
 
+.top-space{
+  margin-bottom: 5.5rem
+}
+
 .pattern{
   background-size: 980%; /* Auto width, full height */
-  margin-top: -2.5%;
+  margin-bottom: .5%;
   background-image: url('/assets/images/pattern.png');
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center; /* Centers the image in the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-color: rgba(255, 255, 255, 0.965); /* Black overlay with 50% opacity */
   background-blend-mode: overlay; /* Blend the image and color */
-
 }
 
 .with-line::after {
@@ -1088,7 +1091,7 @@ blockquote .author {
   bottom: 0;
   width: 100px; /* Adjust the width of the line */
   height: 2px; /* Adjust the thickness of the line */
-  background: linear-gradient(to right, rgba(147, 147, 147, 0), #cfcfcf, rgba(0, 0, 0, 0)); /* Creates the fade-out effect */
+  background: linear-gradient(to right, rgba(147, 147, 147, 0), #0097b5, rgba(0, 0, 0, 0)); /* Creates the fade-out effect */
   transform: translateX(-50%); /* Center the line under the text */
 }
 
@@ -2046,7 +2049,7 @@ header.header, .burger {
   }
   .menu.social {
     align-self: right;
-    font-size: .6rem;
+    font-size: .4rem;
     line-height: 1.4;
   }
   .menu.social li:last-child a {
@@ -2556,6 +2559,8 @@ ul.grid-filters li:first-child a {
 ul.grid-filters li:last-child a {
   padding-right: 0 !important;
 }
+
+
 
 @media screen and (max-width: 850px) {
   ul.grid-filters {

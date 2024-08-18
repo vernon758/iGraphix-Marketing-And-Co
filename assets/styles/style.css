@@ -1466,7 +1466,7 @@ html.loaded:before, html.loaded:after {
 
 .button.link {
   padding: 0;
-  color: #95969c;
+  color: #ffffff;
 }
 
 .button.link:hover, .button.link:active, .button.link:focus, .button.link.active, .button.link.active:hover {
@@ -4763,6 +4763,10 @@ form textarea {
 
 .light-text .button:hover {
   color: #1d1e20 !important;
+}
+
+.light-text .button:hover {
+  color: #0097b5 !important;
 }
 
 .grey-text, .grey-text * {

@@ -280,3 +280,37 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         alert("There was an error submitting the form. Please try again later.");
     });
 });
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    
+    var form = e.target;
+    var email = form.Email.value;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      // Redirect to error page if email is invalid
+      window.location.href = "/pages/error.html";
+      return;
+    }
+
+    var data = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: data
+    })
+    .then(function(response) {
+      if (response.ok) {
+        window.location.href = form.getAttribute("data-redirect");
+      } else {
+        window.location.href = "/pages/error.html";
+      }
+    })
+    .catch(function(error) {
+      console.error("Error:", error);
+      window.location.href = "/pages/error.html";
+    });
+  });
+
+
+  

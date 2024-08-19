@@ -258,3 +258,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    
+    var form = e.target;
+    var data = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: data
+    })
+    .then(function(response) {
+        if (response.ok) {
+            window.location.href = form.getAttribute("data-redirect");
+        } else {
+            alert("There was an issue with your submission. Please try again.");
+        }
+    })
+    .catch(function(error) {
+        console.error("Error:", error);
+        alert("There was an error submitting the form. Please try again later.");
+    });
+});

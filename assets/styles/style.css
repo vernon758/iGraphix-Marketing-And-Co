@@ -1324,8 +1324,8 @@ html.loaded:before, html.loaded:after {
   transition: all .4s;
   border: 5px solid;
   background: none;
-  animation: rotate .35s infinite both linear;
-  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) #1d1e20 #1d1e20;
+  animation: rotate .9s infinite both linear;
+  border-color: rgb(1, 148, 170) rgba(0, 0, 0, 0.2) #0097b5 #0097b500;
   transform: rotate(45deg);
 }
 

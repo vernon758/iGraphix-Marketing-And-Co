@@ -106,41 +106,47 @@
 
 
 
+    <!--Contact us-->
+    <section class="section-size-3 lighter-bg">
+      <div class="container">
+        <div class="grid center">
+          <div class="column-5">
+           <blockquote><span>Contact Us Today</span>
+            <br>
+              <span class="font-size-1">Call Us: <a href="tel:17587266532" target="_blank">+1 (758) 726-6532</a></span>
+              <br> 
+              <div class="font-size-1"> <span>Email Us: </span><span> <a href="mailto:info@igraphixmarketingand.co" target="_blank">info@igraphixmarketingand.co</a></span>
+            </blockquote>
+              <div class="map-container">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15101.503779180155!2d-60.9861029!3d14.0093265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x58c13da0f089ae1%3A0x3cdb4ad099bddb75!2siGraphix%20Marketing%20%26%20Co.!5e1!3m2!1sen!2s!4v1723827797007!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+                            
+            </blockquote>
+          </div>
+          <div class="column-6 offset-1">
 
 
-       <!--Contact us-->
-       <section class="section-size-3 lighter-bg">
-        <div class="container">
-          <div class="grid center">
-            <div class="column-5">
-             <blockquote><span>Contact Us Today</span>
-              <br>
-                <span class="font-size-1">Call Us: <a href="tel:17587266532" target="_blank">+1 (758) 726-6532</a></span>
-                <br> 
-                <div class="font-size-1"> <span>Email Us: </span><span> <a href="mailto:info@igraphixmarketingand.co" target="_blank">info@igraphixmarketingand.co</a></span>
-              </blockquote>
-                <div class="map-container">
-                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15101.503779180155!2d-60.9861029!3d14.0093265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x58c13da0f089ae1%3A0x3cdb4ad099bddb75!2siGraphix%20Marketing%20%26%20Co.!5e1!3m2!1sen!2s!4v1723827797007!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                              
-              </blockquote>
-            </div>
-            <div class="column-6 offset-1">
-              <form class="box white shadow text-left" method="post" action="assets/php/form-script.php">
-                <label>Name</label>
-                <input name="Name" id="Name" type="text" placeholder="John Doe" required>
-                <label>Email</label>
-                <input name="Email" id="Email" type="email" placeholder="e.g. johndoe@example.com" required>
-                <label>Message</label>
-                <textarea name="Message" id="Message" placeholder="Ask me anything" required></textarea>
-                <button class="button" type="submit">Submit</button>
-              </form>
-            </div>
+
+            <form class="box white shadow text-left" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-redirect="/pages/thank-you.html">  
+              <input type="hidden" name="access_key" value="b9c1d41d-c4a2-42b9-8dc2-68a75491928a">
+          
+              <label>Name</label>
+              <input name="Name" type="text" placeholder="John Doe" required>
+              
+              <label>Email</label>
+              <input name="Email" type="email" placeholder="e.g. johndoe@example.com" required>
+              
+              <label>Message</label>
+              <textarea name="Message" placeholder="Ask me anything" required></textarea>
+              
+              <button class="button" type="submit">Submit</button>
+          </form>
+          
           </div>
         </div>
-      </section>
-    
-
+      </div>
+    </section>
+  
 
       <!-- Footer-->
       <footer class="footer border-top" style="height: 30%; padding-top: 20px">

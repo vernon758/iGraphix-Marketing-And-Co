@@ -126,20 +126,30 @@
               </blockquote>
             </div>
             <div class="column-6 offset-1">
-              <form class="box white shadow text-left" method="post" action="assets/php/form-script.php">
+
+
+
+              <form class="box white shadow text-left" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-redirect="/pages/thank-you.html">  
+                <input type="hidden" name="access_key" value="b9c1d41d-c4a2-42b9-8dc2-68a75491928a">
+            
                 <label>Name</label>
-                <input name="Name" id="Name" type="text" placeholder="John Doe" required>
+                <input name="Name" type="text" placeholder="John Doe" required>
+                
                 <label>Email</label>
-                <input name="Email" id="Email" type="email" placeholder="e.g. johndoe@example.com" required>
+                <input name="Email" type="email" placeholder="e.g. johndoe@example.com" required>
+                
                 <label>Message</label>
-                <textarea name="Message" id="Message" placeholder="Ask me anything" required></textarea>
+                <textarea name="Message" placeholder="Ask me anything" required></textarea>
+                
                 <button class="button" type="submit">Submit</button>
-              </form>
+            </form>
+            
             </div>
           </div>
         </div>
       </section>
     
+
 
 
       <!-- Footer-->

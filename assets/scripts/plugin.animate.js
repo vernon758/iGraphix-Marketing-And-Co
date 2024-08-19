@@ -1,4 +1,3 @@
-// Animate! By ThemeVillain
 
 var $body = $('body'),
     // Animated variables

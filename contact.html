@@ -130,17 +130,19 @@
             <div class="column-6 offset-1">
 
 
-
               <form class="box white shadow text-left" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-redirect="/pages/thank-you.html">  
                 <input type="hidden" name="access_key" value="b9c1d41d-c4a2-42b9-8dc2-68a75491928a">
-            
-                <label>Name</label>
+                
+                <label>Full Name*</label>
                 <input name="Name" type="text" placeholder="John Doe" required>
                 
-                <label>Email</label>
+                <label>Email*</label>
                 <input name="Email" type="email" placeholder="e.g. johndoe@example.com" required>
+            
+                <label>Phone Number* (Preferred Whatsapp Number)</label>
+                <input id="phone" name="Phone Number" type="tel" placeholder="e.g. 1 (758) 726-6532" required>
                 
-                <label>Message</label>
+                <label>Message*</label>
                 <textarea name="Message" placeholder="Ask me anything" required></textarea>
                 
                 <button class="button" type="submit">Submit</button>
@@ -153,7 +155,6 @@
     
 
 
-
       <!-- Footer-->
       <footer class="footer border-top" style="height: 30%; padding-top: 20px">
           <div class="font-size-1"> <span>Email Us</span><span> <a href="mailto:info@igraphixmarketingand.co" target="_blank">info@igraphixmarketingand.co</a></span>
@@ -163,30 +164,36 @@
     </div>
 
 
+
+
     <!-- Scripts-->
     <!-- Core-->
- <!-- Scripts-->
-    <!-- Core-->
-    <script src="../assets/scripts/core.jquery.js"></script>
+    <script src="/assets/scripts/core.jquery.js"></script>
     <!-- Vendor Plugins-->
-    <script src="../assets/scripts/plugin.imagesloaded.pkgd.js"></script>
-    <script src="../assets/scripts/plugin.in-viewport.js"></script>
-    <script src="../assets/scripts/plugin.animate.js"></script>
-    <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script>
-    <script src="../assets/scripts/plugin.ScrollToPlugin.min.js"></script>
-    <script src="../assets/scripts/plugin.SplitText.js"></script>
-    <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
-    <script src="../assets/scripts/plugin.touchSwipe.min.js"></script>
-    <script src="../assets/scripts/plugin.typed.min.js"></script>
+    <script src="/assets/scripts/plugin.imagesloaded.pkgd.js"></script>
+    <script src="/assets/scripts/plugin.in-viewport.js"></script>
+    <script src="/assets/scripts/plugin.animate.js"></script>
+    <script src="/assets/scripts/plugin.isotope.pkgd.min.js"></script>
+    <script src="/assets/scripts/plugin.ScrollToPlugin.min.js"></script>
+    <script src="/assets/scripts/plugin.SplitText.js"></script>
+    <script src="/assets/scripts/plugin.TweenMax.min.js"></script>
+    <script src="/assets/scripts/plugin.touchSwipe.min.js"></script>
+    <script src="/assets/scripts/plugin.typed.min.js"></script>
     <!-- Plugins-->
-    <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
-    <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
-    <script src="../assets/scripts/main.functions.js"></script>
+    <script src="/assets/plugins/nevo-slider/nevo-slider.js"></script>
+    <script src="/assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
+    <script src="/assets/scripts/main.functions.js"></script>
+
     <!-- Text effect-->
     <script src="https://ryandejaegher.com/js/marquee.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 <!----- REMIX -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+     <!--form-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
   </body>
 </html>

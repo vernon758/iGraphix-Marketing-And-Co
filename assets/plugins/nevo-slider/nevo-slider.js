@@ -1,10 +1,3 @@
-/*
-
-Nevo Slider JS
-Version 1.0
-Made by ThemeVillain
-
-*/
 
 ;(function($) {
 

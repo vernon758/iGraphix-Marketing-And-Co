@@ -1,9 +1,3 @@
-/*
-
-Nevo Lightbox JS
-Version 1.0
-
-*/
 
 function isYoutube(url) {
     var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;

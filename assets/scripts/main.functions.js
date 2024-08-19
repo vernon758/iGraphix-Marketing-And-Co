@@ -1,17 +1,3 @@
-/*
-
-    Nevo Template Script
-    Version 2.0.2
-    By ThemeVillain
-    https://themevillain.com/
-
-    // Thank you for your purchase!
-    // & Happy coding!
-
-    // Have questions?
-    // Ask support@themevillain.com
-
-*/
 
 $(function () {
 
@@ -280,37 +266,36 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         alert("There was an error submitting the form. Please try again later.");
     });
 });
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent the default form submission
-    
-    var form = e.target;
-    var email = form.Email.value;
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailPattern.test(email)) {
-      // Redirect to error page if email is invalid
-      window.location.href = "/pages/error.html";
-      return;
-    }
-
-    var data = new FormData(form);
-
-    fetch(form.action, {
-      method: "POST",
-      body: data
-    })
-    .then(function(response) {
-      if (response.ok) {
-        window.location.href = form.getAttribute("data-redirect");
-      } else {
-        window.location.href = "/pages/error.html";
-      }
-    })
-    .catch(function(error) {
-      console.error("Error:", error);
-      window.location.href = "/pages/error.html";
+    $(document).ready(function() {
+        $('#phone').mask('0 (000) 000-0000', {
+            translation: {
+                '0': {pattern: /[0-9]/}
+            },
+            onKeyPress: function(phone, e, field, options) {
+                // Update the mask if the user types a different country code
+                var newMask = phone[0] === '1' ? '0 (000) 000-0000' : '000 (000) 000-0000';
+                $(field).mask(newMask, options);
+            }
+        });
     });
-  });
 
+    
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        initialCountry: "auto",
+        geoIpLookup: function(success, failure) {
+            fetch("https://ipinfo.io?token=YOUR_TOKEN_HERE") // Replace with your token
+                .then(response => response.json())
+                .then(data => success(data.country))
+                .catch(() => success("US"));
+        },
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
 
+    // You can format the number on form submission like this:
+    document.querySelector("#contact-form").addEventListener("submit", function() {
+        const formattedNumber = phoneInput.getNumber();
+        phoneInputField.value = formattedNumber;
+    });
+  
   

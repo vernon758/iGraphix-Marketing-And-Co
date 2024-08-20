@@ -2543,7 +2543,7 @@ ul.grid-filters li:last-child a {
     display: block;
     position: absolute;
     width: 2rem;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #000000;
     transition: all .15s;
   }
   ul.grid-filters:before {
@@ -4771,6 +4771,7 @@ form textarea {
 .color-text-2, .color-text-2 * {
   color: #ffebe0;
 }
+
 
 .border-top {
   border-top: 1px solid #eaeaee;

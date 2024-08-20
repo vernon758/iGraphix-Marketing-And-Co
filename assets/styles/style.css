@@ -32,9 +32,18 @@
   margin-left: -20px;
 }
 
-html body #lightbox img {
-  max-width: 9999999px !important;
-  z-index: 2;
+#lightbox img {
+  margin-left: -432px;
+  margin-top: -432px;
+  left: 50%;
+  top: 50%;
+  width: 865px;
+  height: 865px;
+  visibility: inherit;
+  opacity: 1;
+  z-index: 999998;
+  position: fixed;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 html body #lightbox img.zoomable {
@@ -2291,6 +2300,19 @@ x-marquee {
 
 
 @media screen and (max-width: 1024px) {
+
+  html body  #lightbox img {
+    margin-left: -435px;
+    margin-top: -435px;
+    left: 50%;
+    top: 50%;
+    width: 71px;
+    height: 71px;
+    visibility: inherit;
+    opacity: 1;
+    z-index: 999998;
+  }
+
   .pattern{
     background-size: auto 1000%; /* Auto width, full height */
     background-image: url('/assets/images/pattern.png');

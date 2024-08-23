@@ -298,4 +298,3 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         phoneInputField.value = formattedNumber;
     });
   
-  

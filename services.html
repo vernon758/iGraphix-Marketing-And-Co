@@ -31,7 +31,19 @@
      
       </li>        
     <!---Portfolio-->
-        <li class="menu-item"><a class="menu-link" href="portfolio.html">Portfolio</a></li>
+            <li class="menu-item has-dropdown"><a class="menu-link" href="/portfolio.html">Portfolio</a>
+      <!-- Dropdown-->
+      <ul class="dropdown-nav">
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-business-cards.html">Business Cards</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-drone-shots.html">Drone Shots</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-flyers.html">Flyers</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-logos.html">Logos</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-photography.html">Photography</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-videos.html">Videos</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-web-development.html">Web Development</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-window-design.html">Window Designs</a></li>
+         </li>
+     </ul>
 
     <!---Blog
           <li class="menu-item has-dropdown"><a class="menu-link" href="blog.html">Blog</a></li>
@@ -81,6 +93,7 @@
       </header>
 
 
+    
     <!-- Burger menu-->
       <div class="burger">
         <hr>
@@ -88,7 +101,21 @@
         <hr>
       </div>
       
+<!---Scroll Progress-->
+      <div class="scroll-progress"></div>
+      <script>
+        window.onscroll = function() {
+          let scrollProgress = document.querySelector('.scroll-progress');
+          let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          let scrollPercentage = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = scrollPercentage + "%";
+        };
+      </script>
 
+      
+
+      <div class="content">
 
 
 

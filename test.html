@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Progress Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background-color: #6366f1;
+      z-index: 1000;
+      transition: width 0.25s ease;
+    }
+
+    .content {
+      height: 2000px; /* Just for example, adjust based on your content */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <div class="content">
+    <h1>Scroll to see the progress bar in action</h1>
+    <p>...</p>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      let scrollProgress = document.querySelector('.scroll-progress');
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrollPercentage = (scrollTop / scrollHeight) * 100;
+      scrollProgress.style.width = scrollPercentage + "%";
+    };
+  </script>
+
+</body>
+</html>

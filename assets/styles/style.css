@@ -2285,6 +2285,18 @@ x-marquee {
   text-decoration: none;
   font-size: 12px;
 }
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px; /* Adjust height as needed */
+  background-color: #0097b5; /* Change to your preferred color */
+  z-index: 1000;
+  transition: width 0.25s ease;
+}
+
 .icon-container{
   margin-left: -20%;
   text-decoration: none !important;

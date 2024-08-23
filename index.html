@@ -36,8 +36,19 @@
      
       </li>        
     <!---Portfolio-->
-        <li class="menu-item"><a class="menu-link" href="portfolio.html">Portfolio</a></li>
-
+    <li class="menu-item has-dropdown"><a class="menu-link" href="portfolio.html">Portfolio</a>
+      <!-- Dropdown-->
+      <ul class="dropdown-nav">
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-business-cards.html">Business Cards</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-drone-shots.html">Drone Shots</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-flyers.html">Flyers</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-logos.html">Logos</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-photography.html">Photography</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-videos.html">Videos</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-web-development.html">Web Development</a></li>
+        <li class="menu-item"><a class="menu-link" href="/pages/portfolio-window-design.html">Window Designs</a></li>
+         </li>
+     </ul>
     <!---Blog
           <li class="menu-item has-dropdown"><a class="menu-link" href="blog.html">Blog</a></li>
     -->
@@ -49,7 +60,6 @@
     <li class="menu-item"><a class="menu-link" href="getaquote.html">Get A Quote</a></li>
     </li>
 </ul>
-</li>
     <!--Contact us-->
           <li class="menu-item"><a class="menu-link" href="contact.html">Contact Us</a></li>
         </ul>
@@ -86,6 +96,7 @@
       </header>
 
 
+    
     <!-- Burger menu-->
       <div class="burger">
         <hr>
@@ -93,16 +104,37 @@
         <hr>
       </div>
       
+<!---Scroll Progress-->
+      <div class="scroll-progress"></div>
+      <script>
+        window.onscroll = function() {
+          let scrollProgress = document.querySelector('.scroll-progress');
+          let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          let scrollPercentage = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = scrollPercentage + "%";
+        };
+      </script>
 
-  
+      
+<!---Scroll Progress-->
+      <div class="scroll-progress"></div>
+      <script>
+        window.onscroll = function() {
+          let scrollProgress = document.querySelector('.scroll-progress');
+          let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          let scrollPercentage = (scrollTop / scrollHeight) * 100;
+          scrollProgress.style.width = scrollPercentage + "%";
+        };
+      </script>
 
-
-
+      
    <!---Home Screen-->
-      <div class="content">
+   <div class="content">
         <section class="nevo-slider halfscreen lighter-bg background-zoom">
           <div class="slides">
-            <div class="slide color-bg-2"><img class="opacity-2 background" src="assets/images/studio_2.png" >
+            <div class="slide color-bg-2"><img class="opacity-2 background" src="assets/images/studio_4.png" >
               <div class="container">
                 <div class="grid vcenter">
                     <div class="column-8 centered text-center">
@@ -139,6 +171,9 @@
           </div>
         </section>
         --->
+
+
+
 
         
       <!-- Think. Create and Iterate title --->
@@ -320,7 +355,7 @@
        <script src="https://widget.trustmary.com/QswlKg6jI"></script>
 
 
-       <!--Contact us-->
+       <!--Contact us-->`
        <section class="section-size-3 lighter-bg">
         <div class="container">
           <div class="grid center">
@@ -378,7 +413,6 @@
 
 
 
-
     <!-- Scripts-->
     <!-- Core-->
     <script src="/assets/scripts/core.jquery.js"></script>
@@ -409,5 +443,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     
+
+
   </body>
 </html>

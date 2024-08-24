@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll Progress Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 4px;
-      background-color: #6366f1;
-      z-index: 1000;
-      transition: width 0.25s ease;
-    }
-
-    .content {
-      height: 2000px; /* Just for example, adjust based on your content */
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCompany - Responsive Hero Section</title>
+        /* ... (previous styles remain unchanged) ... */
+    </style>
 </head>
-<body>
+<body class="font-sans">
+    <!-- ... (previous header code remains unchanged) ... -->
 
-  <div class="scroll-progress"></div>
+    <main class="pt-16 bg-gray-100">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-12 md:py-24">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Left Side: Company Info -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Welcome to MyCompany</h1>
+                    <p class="text-xl text-gray-600 mb-6">We're revolutionizing the industry with innovative solutions tailored to your needs.</p>
+                    <a href="#" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Learn More</a>
+                </div>
 
-  <div class="content">
-    <h1>Scroll to see the progress bar in action</h1>
-    <p>...</p>
-  </div>
+                <!-- Right xSide: Details and Buttons -->
+                <div class="w-full md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us?</h2>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Industry-leading technology
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                24/7 customer support
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Customizable solutions
+                            </li>
+                        </ul>
+                        <div class="space-y-4">
+                            <a href="#" class="block text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Get Started</a>
+                            <a href="#" class="block text-center border border-blue-600 text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script>
-    window.onscroll = function() {
-      let scrollProgress = document.querySelector('.scroll-progress');
-      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      let scrollPercentage = (scrollTop / scrollHeight) * 100;
-      scrollProgress.style.width = scrollPercentage + "%";
-    };
-  </script>
+        <!-- ... (rest of your main content) ... -->
+    </main>
 
+    <!-- ... (previous script remains unchanged) ... -->
 </body>
 </html>

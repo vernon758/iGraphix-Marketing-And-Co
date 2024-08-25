@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-document.getElementById("contact-form").addEventListener("submit", function(e) {
+document.getElementById("contact-form quoteform").addEventListener("submit", function(e) {
     e.preventDefault(); // Prevent the default form submission
     
     var form = e.target;
@@ -298,7 +298,6 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         phoneInputField.value = formattedNumber;
     });
   
-
 
 
 

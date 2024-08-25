@@ -5198,6 +5198,215 @@ form textarea {
 
 
 
-.blue-bkg{
+.boxx {
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.boxx:last-child {
+  margin-bottom: 0;
+}
+
+.boxx.black {
+  background: #1d1e20;
+}
+
+.boxx.black * {
+  color: white;
+}
+
+.boxx.white {
+  background: white;
+}
+
+.boxx.bordered {
+  border: 1px solid #1d1e20;
+}
+
+.boxx.shadow {
+  box-shadow: 0 2rem 4rem rgba(29, 30, 32, 0.1);
+}
+
+@media screen and (max-width: 1600px) {
+  .boxx {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .boxx {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .boxx:not(.white):not(.shadow):not(.bordered):not(.black) {
+    padding: 1rem 0;
+  }
+  .boxx .boxx {
+    margin: 1rem;
+  }
+}
+
+
+
+
+
+.quote-form-container {
+  width: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+}
+.quote-form-title {
+  text-align: center;
+  color: #333;
+}
+.quote-form-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr;
+}
+@media (min-width: 768px) {
+  .quote-form-grid {
+      grid-template-columns: 2fr 2fr;
+  }
+}
+.quote-form-group {
+  margin-bottom: 20px;
+}
+.quote-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.quote-form-group input,
+.quote-form-group select,
+.quote-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.quote-form-group select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px auto;
+}
+.quote-form-group textarea {
+  height: 100px;
+}
+.quote-form-full-width {
+  grid-column: 1 / -1;
+}
+.quote-form-hidden {
+  display: none;
+}
+.quote-form-file-upload {
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.quote-form-submit-btn {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.quote-form-submit-btn:hover {
   background-color: #0097b5;
+}
+.quote-form-package-description {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 5px;
+
+}
+
+.quote-form-checkbox-group {
+  margin-top: 20px;
+}
+
+.quote-form-checkbox-group label {
+  display: inline-block; /* Ensures label is inline with the checkbox */
+  margin-left: 5px;
+  cursor: pointer; /* Ensures the label is clickable */
+  vertical-align: middle; /* Aligns label text vertically with the checkbox */
+}
+
+.quote-form-checkbox-group input[type="checkbox"] {
+  width: 18px; /* Size of the checkbox */
+  height: 18px; /* Makes the checkbox square */
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer; /* Ensures the checkbox is clickable */
+  -webkit-appearance: none; /* Removes default styling */
+  -moz-appearance: none; /* Removes default styling */
+  appearance: none; /* Removes default styling */
+  border: 2px solid #007bff; /* Border color and thickness */
+  border-radius: 3px; /* Rounded corners, adjust for more or less rounding */
+  background-color: white; /* Background color of checkbox */
+  position: relative;
+  box-sizing: border-box; /* Ensures border and padding are included in width/height */
+  vertical-align: middle; /* Aligns checkbox vertically with label text */
+}
+
+.quote-form-checkbox-group input[type="checkbox"]:checked {
+  background-color: #007bff; /* Background color when checked */
+  border-color: #007bff; /* Border color when checked */
+}
+
+.quote-form-checkbox-group input[type="checkbox"]:checked::after {
+  content: '✓'; /* Checkmark content */
+  font-size: 14px; /* Adjust the size of the checkmark */
+  color: white; /* Color of the checkmark */
+  position: absolute;
+  top: 0;
+  left: 2px; /* Adjust the position of the checkmark */
+  line-height: 18px;
+}
+
+.quote-form-checkbox-item {
+  margin-bottom: 15px;
+}
+
+.quote-terms {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.quote-form-select-wrapper {
+  width: 50%;
+}
+
+.quote-terms{
+  font-size: 0.7rem;
+  margin-top: -29px;
+  margin-left: 40px;
+  width: 50%;
+}
+
+.line-across{
+  margin-left: 20%;
+  width: 60%;
+}
+
+.red{
+  color: red;
+}
+
+.sm-dspt{
+  margin-top: -1px;
+  color: #4e4e4e;
+  font-size: 0.6rem;
 }

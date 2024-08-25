@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -151,6 +152,50 @@
             </div>
         </section>
 
+ <!-- Think. Create and Iterate effect
+ <x-marquee count="50" timing="200"><h2>Think. Create. Iterate.</h2></x-marquee>
+
+--->
+
+
+        <section id="projectFacts" class="sectionClasss">
+          <div class="fullWidth eight columns">
+              <div class="projectFactsWrap ">
+                  <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                    <i class="ri-brush-fill"></i>                     
+                     <p id="number1" class="number">12</p>
+                      <span></span>
+                      <p>+Projects</p>
+                  </div>
+
+                  <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                    <i class="ri-user-smile-fill"></i>                      
+                    <p id="number2" class="number">99</p>
+                      <span></span>
+                      <p>+Happy clients</p>
+                  </div>
+
+                  <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                    <i class="ri-group-fill"></i>                      
+                    <p id="number3" class="number">05</p>
+                      <span></span>
+                      <p>Team members</p>
+                  </div>
+
+                  <div class="item wow fadeInUpBig animated animated" data-number="2019" style="visibility: visible;">
+                    <i class="ri-briefcase-fill"></i>                    
+                     <p id="number4" class="number">2019</p>
+                      <span></span>
+                      <p>We Started</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </section>
+
+
+
+
         <!--- Scrolling Text
         <x-marquee count="100" full-width timing="200"><h2>Think. Create. Iterate.</h2></x-marquee>
         <x-marquee count="100" full-width timing="180"><h2>Think. Create. Iterate.</h2></x-marquee>
@@ -174,12 +219,13 @@
 
 
       <!-- Think. Create and Iterate title --->
-      <h2 class="mobile-text"> Think. Create. Iterate.</h2>
+      
        <!-- brief intro -->
         <section class="section-size" style="background-color: #e4ee230a;">
             <div class="container">
               <div class="grid width-10 centered">
                 <div class="column-6 centered pad-4">
+                  <h2 class="mobile-text"> Think. Create. Iterate.</h2>
                   <p class="moblie-sm-text"><br><br>Our motto is simple: we care deeply about the 
                     products we create and strive to make them better 
                     every day. It should be pursued, better products. </p>
@@ -187,7 +233,7 @@
                       Get A Quote</a>
                 </div>
                 <div class="column-4">
-                      <div class="thumb-1" class="">
+                      <div class="thumb-1">
                         <img src="/assets/images/10.png"/>
                           </div>
                   </div>
@@ -195,12 +241,7 @@
           </section>
 
 
-       <!-- Think. Create and Iterate effect--->
-        <x-marquee count="50" timing="200"><h2>Think. Create. Iterate.</h2></x-marquee>
-        <x-marquee count="40" timing="180"><h2>Think. Create. Iterate.</h2></x-marquee>
-
-
-
+      
         <!---How it works--->
        
         <section class="custom-bg-gray py-12">
@@ -225,7 +266,6 @@
                   </li>
 
 
-                  <!-- Repeat for other steps -->
                   <li class="custom-step-item">
                     <span class="custom-step-line" aria-hidden="true"></span>
                     <div class="custom-step-icon">
@@ -246,7 +286,7 @@
                         <i class="ri-bank-card-fill"></i>
                     </div>
                     <div class="custom-step-content">
-                        <h3 class="custom-step-title">50% Down Payment (or Full Payment)</h3>
+                        <h3 class="custom-step-title">50% Down Payment</h3>
                         <h4 class="custom-step-subtitle">A 50% down payment (or full payment) is required to start work on a project.</h4>
                     </div>
                 </li>
@@ -259,14 +299,15 @@
                       <i class="ri-file-shield-fill"></i>
                                       </div>
                   <div class="custom-step-content">
-                      <h3 class="custom-step-title">Final Delivery and Payment</h3>
-                      <h4 class="custom-step-subtitle">Final product presentation, the remaining 50% of the payment is due , and file delivery upon approval.</h4>
+                      <h3 class="custom-step-title">Final Delivery</h3>
+                      <h4 class="custom-step-subtitle">Final product presentation, the remaining 50% of the payment is due and file delivery upon approval.</h4>
                   </div>
               </li>
 
               </ul>
           </div>
       </section>
+
 
       <!--Our Services-->
           <section class="section-size-1 border-bottom pattern">
@@ -510,7 +551,45 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     
+<script>
+	$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    10000,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
 
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+$('#number1').jQuerySimpleCounter({end: 100,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 100,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 5,duration: 3000});
+$('#number4').jQuerySimpleCounter({end: 2019,duration: 2500});
+
+
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+
+</script>
 
   </body>
 </html>

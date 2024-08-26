@@ -49,10 +49,10 @@
     </li>
 
    <!---Service-->
-          <li class="menu-item has-dropdown"><a class="menu-link" href="services.html">Services</a>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="getaquote.html">Get a Quote</a>
  <!-- Dropdown-->
  <ul class="dropdown-nav">
-    <li class="menu-item"><a class="menu-link" href="getaquote.html">Get A Quote</a></li>
+    <li class="menu-item"><a class="menu-link" href="services.html">Our Services</a></li>
     </li>
 </ul>
 </li>
@@ -67,12 +67,12 @@
       </div>
 
     <!-- Social Navigation-->
-        <ul class="menu social">
-          <li class="menu-item"><a class="menu-link color-text-33" href="https://www.instagram.com/igraphixmarketingco/" target="_blank">Instagram</a></li>
-          <li class="menu-item"><a class="menu-link color-text-44" href="https://www.linkedin.com/in/vernon-francis/" target="_blank">LinkedIn</a></li>
-          <li class="menu-item"><a class="menu-link color-text-55" href="https://api.whatsapp.com/send/?phone=17587266532&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</a></li>
-        </ul>
-     
+    <ul class="menu social">
+      <li class="menu-item"><a class="menu-link color-text-33" href="https://www.instagram.com/igraphixmarketingco/" target="_blank">Instagram</a></li>
+      <li class="menu-item"><a class="menu-link color-text-44" href="https://www.linkedin.com/in/vernon-francis/" target="_blank">LinkedIn</a></li>
+      <li class="menu-item"><a class="menu-link color-text-55" href="https://api.whatsapp.com/send/?phone=17587266532&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</a></li>
+    </ul>
+ 
         <div class="menu-button">
             <a class="icon-container" href="getaquote.html" style="text-decoration: none;"> <div class="icon-container">
                 <div class="bubble">
@@ -128,256 +128,224 @@
         </section>
 
         <div class="quote-form-container">
-          <form id="quoteForm" action="https://api.web3forms.com/submit" method="POST">  
+          
+          <form class="text-left" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-redirect="/pages/thank-you.html">  
             <input type="hidden" name="access_key" value="b9c1d41d-c4a2-42b9-8dc2-68a75491928a">
-           <input type="hidden" name="subject" value="Quote Request Submission">
-           <input type="hidden" name="from_name" value="iGraphix Marketing & Co.">
-           
-              <div class="quote-form-grid">
-                  <div class="quote-form-group quote-form-full-width">
-                      <label for="service">Type of Service<span class="red">*</span>
-                        <br><p class="sm-dspt">Provide additional details about the service</p>
-                      </label>
-                      <div class="quote-form-select-wrapper">
-                          <select id="service" name="service" required>
-                              <option value="">Select a service</option>
-                              <option value="logo">Logo</option>
-                              <option value="flyer">Flyer</option>
-                              <option value="sign">Sign</option>
-                              <option value="business_card">Business Card</option>
-                              <option value="invitation_card">Invitation Card</option>
-                              <option value="window_glass_designs">Window/Glass Designs</option>
-                              <option value="drone_service">Drone Service</option>
-                              <option value="video">Video</option>
-                              <option value="web_development">Web Development</option>
-                              <option value="photography">Photography</option>
-                              <option value="social_media_packages">Social Media Packages</option>
-                              <option value="other">Other</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="quote-form-group quote-form-full-width quote-form-hidden" id="subOptions">
-                      <label for="subOption">Sub-option<span class="red">*</span></label>
-                      <div class="quote-form-select-wrapper">
-                          <select id="subOption" name="subOption">
-                              <option value="">Select a sub-option<span class="red">*</span></option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="firstName">First Name<span class="red">*</span></label>
-                      <input type="text" id="firstName" name="firstName" required>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="lastName">Last Name<span class="red">*</span></label>
-                      <input type="text" id="lastName" name="lastName" required>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="mobileNumber">Mobile Number<span class="red">*</span></label>
-                      <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="1 (758) 726-6532" required>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="email">Email<span class="red">*</span></label>
-                      <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="dueDate">Date Due<span class="red">*</span>
-                        <br><p class="sm-dspt">Enter the date by which the service needs to be completed.</p></label>
-                      <input type="date" id="dueDate" name="dueDate" required>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="country">Country<span class="red">*</span>
-                        <br><p class="sm-dspt">Select your country from the list</p>
-                      </label>
-                      <select id="country" name="country" required>
-                          <option value="">Select a country</option>
-                          <option value="US">United States</option>
-                          <option value="CA">Canada</option>
-                          <option value="UK">United Kingdom</option>
-                          <option value="AU">Australia</option>
-                      </select>
-                  </div>
-                  <div class="quote-form-group quote-form-full-width">
-                      <label for="description">Service Description<span class="red">*</span>
-                        <br><p class="sm-dspt">Provide additional details about the service</p>
-                      </label>
-                      <textarea id="description" name="description" required></textarea>
-                  </div>
-                  <div class="quote-form-group">
-                      <label for="payment">Preferred Payment<span class="red">*</span>
-                        <br><p class="sm-dspt">If you place an order for a service, a deposit of 50% or the full amount (if preferred) is required.</p>
-                      </label>
-                      <select id="payment" name="payment" required>
-                          <option value="">Select payment method</option>
-                          <option value="cash">Cash</option>
-                          <option value="bank_transfer">Bank Transfer</option>
-                      </select>
-                  </div>
-                  <div class="quote-form-group quote-form-full-width">
-                      <label for="fileUpload">Upload Files
-                        <br><p class="sm-dspt">You can upload up to 5 files. 
-                          Accepted formats are: .jpg, .png, .jpeg, .pdf, .doc, .docx, .psd, 
-                          .ai, .stl, .xls, .xlsx. Each file can be a maximum of 10MB. 
-                          If you have special upload requirements, or if your file type 
-                          is not in the acceptable list, please contact us to arrange a file 
-                          exchange.</p>
-                      </label>
-                      <div class="quote-form-file-upload" id="fileUpload">
-                          <p>Drag and drop files here or click to select files</p>
-                          <input type="file" id="files" name="files" multiple style="display: none;">
-                      </div>
-                  </div><div class="quote-form-group quote-form-full-width quote-form-checkbox-group">
-                    <div class="quote-form-checkbox-item">
-                      <input type="checkbox" id="confirmDetails" name="confirmDetails" required>
-                      <label for="confirmDetails">Confirm Order Details<span class="red">*</span></label>
-                    </div>
-                    <div class="quote-form-checkbox-item">
-                      <input type="checkbox" id="agreePolicy" name="agreePolicy" required>
-                      <label for="agreePolicy">I Agree to Refund & Return Policies<span class="red">*</span></label>
-                    </div>
-                    <p class="quote-terms">By checking the above box, I agree to the Refund Policy as well as the Return Policy.</p>
-                  </div>
-                  <div class="quote-form-group quote-form-full-width">
-                      <button type="submit" class="quote-form-submit-btn">Submit Quote Request</button>
-                  </div>
+            <input type="hidden" name="subject" value="Request Submission">
+            <input type="hidden" name="from_name" value="Quote Request - iGraphix Marketing & Co.">
+            <input type="hidden" name="redirect" value="https://igraphixmarketingand.co/pages/thank-you.html">
+
+
+
+            <div class="quote-form-grid">
+              <div class="quote-form-group quote-form-full-width">
+
+                
+                <label for="service">Type of Service<span class="red">*</span>
+                  <br><p class="sm-dspt">Provide additional details about the service</p>
+                </label>
+                <div class="quote-form-select-wrapper">
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="logo">Logo</option>
+                    <option value="flyer">Flyer</option>
+                    <option value="sign">Sign</option>
+                    <option value="business_card">Business Card</option>
+                    <option value="invitation_card">Invitation Card</option>
+                    <option value="window_glass_designs">Window/Glass Designs</option>
+                    <option value="drone_service">Drone Service</option>
+                    <option value="video">Video</option>
+                    <option value="web_development">Web Development</option>
+                    <option value="photography">Photography</option>
+                    <option value="social_media_packages">Social Media Packages</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
               </div>
+              <div class="quote-form-group quote-form-full-width quote-form-hidden" id="subOptions">
+                <label for="subOption">Sub-option<span class="red">*</span></label>
+                <div class="quote-form-select-wrapper">
+                  <select id="subOption" name="subOption">
+                    <option value="">Select a sub-option<span class="red">*</span></option>
+                  </select>
+                </div>
+              </div>
+              <div class="quote-form-group quote-form-hidden" id="hoursGroup">
+                <label for="hours">Hours<span class="red">*</span></label>
+                <input type="number" id="hours" name="hours" min="1" max="10">
+              </div>
+              
+              <div class="quote-form-group quote-form-full-width">
+                <label for="description">Service Description<span class="red">*</span>
+                  <br><p class="sm-dspt">Provide additional details about the service</p>
+                </label>
+                <textarea id="description" name="description" required></textarea>
+              </div>
+              <div class="quote-form-group">
+                <label for="firstName">First Name<span class="red">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="lastName">Last Name<span class="red">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="mobileNumber">Mobile Number<span class="red">*</span></label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="1 (758) 726-6532" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="email">Email<span class="red">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="website">Website (Optional)
+                  <br><p class="sm-dspt">e.g. https://igraphixmarketingand.co</p>
+                </label>
+                <input type="url" id="website" name="website">
+              </div>
+              <div class="quote-form-group">
+                <label for="companyName">Company / Business Name
+                  <br><p class="sm-dspt">Leave blank if is personal</p>
+                </label>
+                <input type="text" id="companyName" name="companyName">
+              </div>
+              <div class="quote-form-group">
+                <label for="address">Address<span class="red">*</span>
+                  <br><p class="sm-dspt">Enter the full address, including street, city, and postal code</p>
+                </label>
+                <input type="text" id="address" name="address" placeholder="eg. Morne Du Don, Castries, LC03 101" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="country">Country<span class="red">*</span>
+                  <br><p class="sm-dspt">Select your country from the list</p>
+                </label>
+                <select id="country" name="country" required>
+                  <option value="">Select a country</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="AU">Australia</option>
+                </select>
+              </div>
+              <div class="quote-form-group">
+                <label for="dueDate">Date Due<span class="red">*</span>
+                  <br><p class="sm-dspt"><span class="red">Rush fee will be applied for orders within 24hrs or less</span></p>
+                </label>
+                <input type="date" id="dueDate" name="dueDate" required>
+              </div>
+              <div class="quote-form-group">
+                <label for="payment">Preferred Payment<span class="red">*</span>
+                  <br><p class="sm-dspt">If you place an order for a service, a deposit of 50% or the full amount (if preferred) is required.</p>
+                </label>
+                <select id="payment" name="payment" required>
+                  <option value="">Select payment method</option>
+                  <option value="cash">Cash</option>
+                  <option value="bank_transfer">Bank Transfer</option>
+                </select>
+              </div>
+          
+             
+              <div class="quote-form-group quote-form-full-width quote-form-checkbox-group">
+                <div class="quote-form-checkbox-item">
+                  <input type="checkbox" id="confirmDetails" name="confirmDetails" required>
+                  <label for="confirmDetails">Confirm Order Details<span class="red">*</span></label>
+                </div>
+                <div class="quote-form-checkbox-item">
+                  <input type="checkbox" id="agreePolicy" name="agreePolicy" required>
+                  <label for="agreePolicy">I Agree to the Payment & Termination policies<span class="red">*</span></label>
+                </div>
+                <p class="quote-terms">By checking the above box, I agree to the <a href="terms-and-conditions.html"> Terms & Conditions</a> as well as.</p>
+              </div>
+              <div class="quote-form-group quote-form-full-width">
+                <button type="submit" class="quote-form-submit-btn">Submit Quote Request</button>
+              </div>
+            </div>
           </form>
-      </div>
-  
-      <script>
-          const subOptions = {
+          <div class="loading-overlay" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Submitting your request...</p>
+          </div>
+          
+          <script>
+            const subOptions = {
               video: ['Video Editing', 'Video Shot', 'Basic Animated Artwork'],
               web_development: ['Basic Website', 'E-commerce'],
-              social_media_packages: ['Package 1', 'Package 2', 'Package 3']
-          };
-  
-          const packageDescriptions = {
-              'Package 1': "1. Create Instagram & Facebook\r.2. Logo\n3. Cover\n4. One flyer",
+              social_media_packages: ['Package 1', 'Package 2', 'Package 3'],
+              photography: ['Birthday', 'Street', 'Beach', 'Wedding', 'Conference', 'Event', 'Boat Ride'],
+              drone_service: ['Birthday', 'Street', 'Beach', 'Wedding', 'Conference', 'Event', 'Boat Ride']
+            };
+            
+            const packageDescriptions = {
+              'Package 1': "1. Create Instagram & Facebook\n2. Logo\n3. Cover\n4. One flyer",
               'Package 2': "1. Create Facebook and Instagram\n2. Logo\n3. Cover\n4. One flyer\n5. Manage social media accounts for two weeks\n6. 2 photo shoot sessions (10 photos)\n7. Posting or updating accounts",
               'Package 3': "1. Create Facebook and Instagram\n2. Logo\n3. Cover\n4. One flyer\n5. Business card\n6. Manage social media accounts for 1 month\n7. 3 photo shoot sessions\n8. Posting or updating account accounts\n9. Adding up to 500 followers on each account\n10. Add 100 likes to 3 posts on each account"
-          };
-  
-          document.getElementById('service').addEventListener('change', function() {
+            };
+            
+            document.getElementById('service').addEventListener('change', function() {
               const subOptionsDiv = document.getElementById('subOptions');
               const subOptionSelect = document.getElementById('subOption');
+              const hoursGroup = document.getElementById('hoursGroup');
               
               subOptionsDiv.classList.add('quote-form-hidden');
+              hoursGroup.classList.add('quote-form-hidden');
               subOptionSelect.innerHTML = '<option value="">Select a sub-option</option>';
-  
+              
               if (subOptions[this.value]) {
-                  subOptions[this.value].forEach(option => {
-                      const optionElement = document.createElement('option');
-                      optionElement.value = option;
-                      optionElement.textContent = option;
-                      subOptionSelect.appendChild(optionElement);
-                  });
-                  subOptionsDiv.classList.remove('quote-form-hidden');
+                subOptions[this.value].forEach(option => {
+                  const optionElement = document.createElement('option');
+                  optionElement.value = option;
+                  optionElement.textContent = option;
+                  subOptionSelect.appendChild(optionElement);
+                });
+                subOptionsDiv.classList.remove('quote-form-hidden');
+                
+                if (this.value === 'photography' || this.value === 'drone_service') {
+                  hoursGroup.classList.remove('quote-form-hidden');
+                }
               }
-          });
-  
-          document.getElementById('subOption').addEventListener('change', function() {
+            });
+            
+            document.getElementById('subOption').addEventListener('change', function() {
               const packageDescription = document.createElement('p');
               packageDescription.className = 'quote-form-package-description';
-              packageDescription.textContent = packageDescriptions[this.value] || '';
+              packageDescription.innerHTML = packageDescriptions[this.value] ? packageDescriptions[this.value].replace(/\n/g, '<br>') : '';
               
               const existingDescription = document.querySelector('.quote-form-package-description');
               if (existingDescription) {
-                  existingDescription.remove();
+                existingDescription.remove();
               }
               
               if (packageDescriptions[this.value]) {
-                  this.parentNode.appendChild(packageDescription);
+                this.parentNode.appendChild(packageDescription);
               }
-          });
-  
-          const fileUpload = document.getElementById('fileUpload');
-          const fileInput = document.getElementById('files');
-  
-          fileUpload.addEventListener('click', () => fileInput.click());
-  
-          fileUpload.addEventListener('dragover', (e) => {
-              e.preventDefault();
-              fileUpload.style.backgroundColor = '#e9e9e9';
-          });
-  
-          fileUpload.addEventListener('dragleave', () => {
-              fileUpload.style.backgroundColor = '#f9f9f9';
-          });
-  
-          fileUpload.addEventListener('drop', (e) => {
-              e.preventDefault();
-              fileUpload.style.backgroundColor = '#f9f9f9';
-              fileInput.files = e.dataTransfer.files;
-              updateFileList();
-          });
-  
-          fileInput.addEventListener('change', updateFileList);
-  
-          function updateFileList() {
-              const fileList = Array.from(fileInput.files).map(file => file.name).join(', ');
-              fileUpload.querySelector('p').textContent = fileList || 'Drag and drop files here or click to select files';
-          }
-  
-          document.getElementById('quoteForm').addEventListener('submit', function(e) {
-            if (!validateForm()) {
-                e.preventDefault();
-            }
-        });
-
-          function validateForm() {
+            });
+            
+            
+            function validateForm() {
               const email = document.getElementById('email').value;
               const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
               if (!emailRegex.test(email)) {
-                  alert('Please enter a valid email address.');
-                  return false;
+                alert('Please enter a valid email address.');
+                return false;
               }
               return true;
-          }
-  
-          document.getElementById('mobileNumber').addEventListener('input', function(e) {
+            }
+            
+            document.getElementById('mobileNumber').addEventListener('input', function(e) {
               let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,4})/);
               e.target.value = !x[2] ? x[1] : `${x[1]} (${x[2]})` + (x[3] ? ` ${x[3]}` : '') + (x[4] ? `-${x[4]}` : '');
-          });
-
-          function validateFiles(files) {
-            if (files.length > 10) {
-                alert('You can upload a maximum of 10 files.');
-                return false;
-            }
+            });
         
-            let totalSize = 0;
-            for (let file of files) {
-                totalSize += file.size;
-            }
-        
-            if (totalSize > 10 * 1024 * 1024) { // 10MB in bytes
-                alert('Total file size must be less than 10MB.');
-                return false;
-            }
-        
-            return true;
-        }
-        
-        fileInput.addEventListener('change', function() {
-          if (validateFiles(this.files)) {
-              updateFileList();
-          } else {
-              this.value = ''; // Clear the file input
-              fileUpload.querySelector('p').textContent = 'Drag and drop files here or click to select files';
-          }
-      });
-      
-      fileUpload.addEventListener('drop', (e) => {
-        e.preventDefault();
-        fileUpload.style.backgroundColor = '#f9f9f9';
-        if (validateFiles(e.dataTransfer.files)) {
-            fileInput.files = e.dataTransfer.files;
-            updateFileList();
-        } else {
-            fileUpload.querySelector('p').textContent = 'Drag and drop files here or click to select files';
-        }
-    });
-      </script>
+              // Set the minimum date for the dueDate input
+              function setMinDate() {
+                  const today = new Date();
+                  const minDate = today.toISOString().split('T')[0];
+                  document.getElementById('dueDate').setAttribute('min', minDate);
+              }
+          
+              document.addEventListener('DOMContentLoaded', setMinDate);
+          </script>
+        </div>
 
        <!--Contact us-->
        <section class="section-size-3 lighter-bg">
@@ -403,7 +371,8 @@
                  <input type="hidden" name="access_key" value="b9c1d41d-c4a2-42b9-8dc2-68a75491928a">
                 <input type="hidden" name="subject" value="General Inquiry Submission">
                 <input type="hidden" name="from_name" value="iGraphix Marketing & Co.">
-                
+                <input type="hidden" name="redirect" value="https://igraphixmarketingand.co/pages/thank-you.html">
+
                 <label>Full Name*</label>
                 <input name="Name" type="text" placeholder="John Doe" required>
                 
@@ -429,6 +398,7 @@
       <!-- Footer-->
       <footer class="footer border-top" style="height: 30%; padding-top: 20px">
           <div class="font-size-1"> <span>Email Us</span><span> <a href="mailto:info@igraphixmarketingand.co" target="_blank">info@igraphixmarketingand.co</a></span>
+            | <a href="/terms-and-conditions.html">Terms & Conditions</a>
             <div class="font-size-1"> <span>Built by </span><span> <a href="https://www.linkedin.com/in/vernon-francis/" target="_blank">Vernon Francis &copy; 2024</a></span>
         </div>
       </footer>

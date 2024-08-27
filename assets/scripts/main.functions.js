@@ -297,7 +297,10 @@ document.getElementById("contact-form quoteform").addEventListener("submit", fun
         const formattedNumber = phoneInput.getNumber();
         phoneInputField.value = formattedNumber;
     });
-  
+    document.querySelector("#phone").addEventListener("input", function(e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{1,4})(\d{1,4})?(\d{1,4})?/);
+        e.target.value = x[1] + ' (' + (x[2] ? x[2] : '') + ') ' + (x[3] ? x[3] : '');
+      });
 
 
 

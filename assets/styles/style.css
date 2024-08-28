@@ -1051,15 +1051,16 @@ blockquote .author {
   margin-bottom: 5.5rem
 }
 
-.pattern{
-  background-size: 980%; /* Auto width, full height */
-  margin-bottom: .5%;
-  background-image: url('/assets/images/pattern.png');
+.pattern {
+  background-size: 980%; /* Adjusts the size of the background image */
+  margin-bottom: 0.5%; /* Adds a small margin at the bottom */
+  background-image: url('/assets/images/pattern1.jpg'); /* Specifies the background image */
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center; /* Centers the image in the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-color: rgba(255, 255, 255, 0.965); /* Black overlay with 50% opacity */
-  background-blend-mode: overlay; /* Blend the image and color */
+  background-color: rgb(48, 48, 48); /* Black overlay with 50% opacity */
+  background-blend-mode: overlay; /* Blends the image with the background color */
+  background-attachment: fixed; /* Creates the fixed scroll effect */
 }
 
 .with-line::after {
@@ -1382,10 +1383,15 @@ html.loaded:before, html.loaded:after {
   margin-left: 1rem;
 }
 
+
+
+
+/* 4. top screen button 
+    margin-right: auto;
+    margin-left: auto;
+    */
 @media screen and (max-width: 850px) {
   .button {
-    margin-right: auto !important;
-    margin-left: auto !important;
     display: block;
     width: max-content;
   }
@@ -2331,16 +2337,7 @@ x-marquee {
     z-index: 999998;
   }
 
-  .pattern{
-    background-size: auto 1000%; /* Auto width, full height */
-    background-image: url('/assets/images/pattern.png');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-position: center; /* Centers the image in the element */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-color: rgba(255, 255, 255, 0.928); /* Black overlay with 50% opacity */
-    background-blend-mode: overlay; /* Blend the image and color */
-  
-  }
+
   .mobile-text{
     font-size: 33px;
   }
@@ -5440,3 +5437,12 @@ form textarea {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+
+
+
+
+
+
+
